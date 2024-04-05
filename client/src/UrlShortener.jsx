@@ -40,8 +40,17 @@ const UrlShortener = () => {
     }
   };
 
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(shortenedUrl);
+    } catch (err) {
+      console.error("Failed to copy:", err);
+    }
+  };
+
+
   return (
-    <div className="url-body" >
+    <div className="url-body">
       <div className="container">
         <header>
           <h1>Short.ly</h1>
@@ -59,11 +68,10 @@ const UrlShortener = () => {
           </form>
           {error && <p className="error">{error}</p>}
           <div>
-            {" "}
             <p>Shorten URL:</p>
             <div className="shortened-url">
               <input type="text" value={shortenedUrl || ""} readOnly />
-              <button>Copy</button>
+              <button onClick={handleCopy}>Copy</button>
             </div>
           </div>
         </main>
