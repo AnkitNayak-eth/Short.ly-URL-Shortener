@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./UrlShortener.css";
-const backendUrl = "sho-rt-ly.vercel.app";
+const backendUrl = "https://sho-rt-ly.vercel.app";
 
 const UrlShortener = () => {
   const [originalUrl, setOriginalUrl] = useState("");
