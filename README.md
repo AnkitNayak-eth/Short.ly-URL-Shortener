@@ -1,4 +1,4 @@
-# Short.ly URL Shortener
+# Trim-it URL Shortener
 
 Simplify URL management effortlessly with Short.ly, a solo project hosted on GitHub. Built with the MERN stack, Short.ly offers a streamlined approach to shortening URLs. Experience efficient link sharing across platforms with Short.ly.
 
